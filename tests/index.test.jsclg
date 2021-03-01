@@ -1,0 +1,4 @@
+$greeting:hello everyone;
+$goodbye:not {{greeting}} but goodbye;
+greeting :- {{greeting}};
+goodbye :- {{goodbye}};

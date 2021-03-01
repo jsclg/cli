@@ -1,0 +1,34 @@
+{
+  "name": "@jsclg/cli",
+  "version": "1.0.0",
+  "description": "JSCLG cli.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsclg/cli.git"
+  },
+  "keywords": [
+    "jscf",
+    "console",
+    "js",
+    "jsc",
+    "javascript",
+    "print",
+    "log",
+    "logger"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsclg/cli/issues"
+  },
+  "homepage": "https://github.com/jsclg/cli#readme",
+  "dependencies": {
+    "@jsclg/parser": "^1.0.1"
+  },
+  "bin": {
+    "jsclg": "bin/index.js"
+  }
+}
