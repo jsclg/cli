@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/jsclg/cli#readme",
   "dependencies": {
-    "@jsclg/parser": "^1.0.1"
+    "@jsclg/parser": "^1.0.2"
   },
   "bin": {
     "jsclg": "bin/index.js"
