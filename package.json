@@ -1,8 +1,9 @@
 {
   "name": "@jsclg/cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JSCLG cli.",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "jsclg tests/index.test.jsclg"
   },
@@ -26,7 +27,7 @@
   },
   "homepage": "https://github.com/jsclg/cli#readme",
   "dependencies": {
-    "@jsclg/parser": "^1.0.2"
+    "@jsclg/parser": "^1.0.5"
   },
   "bin": {
     "jsclg": "bin/index.js"

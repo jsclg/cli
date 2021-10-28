@@ -1,6 +1,7 @@
-$greeting:hello everyone;
-$goodbye:not {{greeting}} but goodbye;
-$importfromjs tests/export.test.js import;
+let greeting = hello;
+let goodbye = not {{greeting}} but bye;
+import goodMorning from ./tests/goodMorning.test.js;
+
 greeting :- {{greeting}};
 goodbye :- {{goodbye}};
-import :- {{import}};
+good morning :- {{goodMorning}};

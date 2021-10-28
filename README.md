@@ -1,6 +1,4 @@
-# cli
-
-JSCLG cli.
+# JSCLG Cli
 
 # What is JSCLG?
 
@@ -8,17 +6,51 @@ JSCLG cli.
 - This package parses code like this ↓
 
   ```
-  $greeting:hello everyone;
-  {{greeting}}
+  let greeting = hello;
+  let goodbye = not {{greeting}} but bye;
+  import goodMorning from ./tests/goodMorning.test.js;
+  greeting :- {{greeting}};
+  goodbye :- {{goodbye}};
+  good morning :- {{goodMorning}};
   ```
 
-  into an array like this ↓
+  and prints it to the console like this ↓
 
   ```js
-  ["hello everyone"];
+  greeting :- hello
+  goodbye :- not hello but bye
+  good morning :- Good Morning!
   ```
 
-# Sample Code
+# Syntax
+
+- ## Variables
+
+  ```
+  let <variable name> = <variable value>;
+  ```
+
+  for example
+
+  ```
+  let name = squik;
+  ```
+
+- ## Importing from other javascript files
+
+  ```
+  import <data> from <file path>;
+  ```
+
+  for example
+
+  ```
+  import age from age.js;
+  ```
+
+  > **Note**: You can also use object notation to import. For example, if the file age.js file exports `{ data: { age: 15 } }`, then you can use `import data.age from age.js` to access the age property's value. The last property(in case of "data.age" it is "age") will be used as the variable name.
+
+# Executing
 
 ```bat
 jsclg <file_name>
